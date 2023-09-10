@@ -1,4 +1,4 @@
-local Event = require('cylibs/events/luvent')
+local Event = require('cylibs/events/Luvent')
 local IndexPath = require('cylibs/ui/collection_view/index_path')
 
 -- Define a simple collection data source table

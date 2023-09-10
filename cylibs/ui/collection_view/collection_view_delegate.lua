@@ -1,5 +1,5 @@
 local DisposeBag = require('cylibs/events/dispose_bag')
-local Event = require('cylibs/events/luvent')
+local Event = require('cylibs/events/Luvent')
 local IndexPath = require('cylibs/ui/collection_view/index_path')
 local Mouse = require('cylibs/ui/input/mouse')
 
