@@ -6,7 +6,8 @@ local Image = require('images')
 ---
 -- A generic view class for creating and managing graphical views.
 --
--- @classmod View
+-- @class module
+-- @name View
 --
 
 local View = {}
