@@ -90,7 +90,7 @@ end
 -- If scrolling is disabled, this function does nothing.
 --
 function ScrollView:updateContentView()
-    if not self:isScrollEnabled() then
+    if not self:isScrollEnabled() or not self:isVisible() then
         return
     end
     local subviews = Q{ self }
