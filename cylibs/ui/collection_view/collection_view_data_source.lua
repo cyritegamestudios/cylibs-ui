@@ -99,6 +99,11 @@ end
 
 -- Update an item at a specific IndexPath
 function CollectionViewDataSource:updateItem(item, indexPath)
+    local currentItem = self.sections[indexPath.section].items[indexPath.row]
+    if currentItem and currentItem == item then
+        return
+    end
+
     local snapshot = self:createSnapshot()  -- Create a snapshot before making changes
 
     self.sections[indexPath.section].items[indexPath.row] = item
@@ -139,6 +144,7 @@ function CollectionViewDataSource:cellForItemAtIndexPath(indexPath)
         return cachedCell
     else
         local newCell = self.cellForItem(item, indexPath)
+        newCell:setClipsToBounds(true)
 
         -- Create a cache for the section if it doesn't exist
         self.cellCache[indexPath.section] = self.cellCache[indexPath.section] or {}

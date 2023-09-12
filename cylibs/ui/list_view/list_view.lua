@@ -2,6 +2,7 @@ local CollectionView = require('cylibs/ui/collection_view/collection_view')
 local CollectionViewDataSource = require('cylibs/ui/collection_view/collection_view_data_source')
 local HorizontalFlowLayout = require('cylibs/ui/collection_view/layouts/horizontal_flow_layout')
 local IndexPath = require('cylibs/ui/collection_view/index_path')
+local Padding = require('cylibs/ui/style/padding')
 local TextCollectionViewCell = require('cylibs/ui/collection_view/cells/text_collection_view_cell')
 local TextItem = require('cylibs/ui/collection_view/items/text_item')
 local TextStyle = require('cylibs/ui/style/text_style')
@@ -61,7 +62,7 @@ end
 function ListView.verticalList(strings, style, textHeight)
     local style = style or TextStyle.Default.Text
     local items = strings:map(function(string) return TextItem.new(string, style)  end):reverse()
-    local listView = ListView.new(items, VerticalFlowLayout.new(2), textHeight)
+    local listView = ListView.new(items, VerticalFlowLayout.new(2, Padding.new(0, 10, 0, 0)), textHeight)
     return listView
 end
 
