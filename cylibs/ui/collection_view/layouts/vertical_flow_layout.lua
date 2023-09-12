@@ -145,11 +145,11 @@ function VerticalFlowLayout:enableScrolling(collectionView)
     collectionView:addSubview(self.downArrow)
 
     self.disposeBag:add(self.upArrow:onClick():addAction(function(_, _, _)
-        collectionView:setContentOffset(collectionView:getContentOffset().x, collectionView:getContentOffset().y - 10)
+        collectionView:setContentOffset(math.max(collectionView:getContentOffset().x, -self.width), math.max(collectionView:getContentOffset().y - 10, -self.height / 2))
     end), self.upArrow:onClick())
 
     self.disposeBag:add(self.downArrow:onClick():addAction(function(_, _, _)
-        collectionView:setContentOffset(collectionView:getContentOffset().x, collectionView:getContentOffset().y + 10)
+        collectionView:setContentOffset(math.min(collectionView:getContentOffset().x, 0), math.min(collectionView:getContentOffset().y + 10, 0))
     end), self.downArrow:onClick())
 
     self:layoutSubviews(collectionView)
