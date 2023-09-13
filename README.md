@@ -21,3 +21,7 @@ You will need the latest version of [cylibs-ui](https://github.com/cyritegamestu
 3. Import `cylibs-ui` into your addon by adding `require('cylibs/ui/cylibs-ui-includes'` to your addon file.
 4. Check out the [Wiki](https://github.com/cyritegamestudios/cylibs-ui/wiki) or ask for help in the [Cyrite Game Studios Discord](https://discord.gg/CfPxDy759J) to get started. Happy coding!
 5. To update cylibs-ui, either do a `git pull --rebase` or follow the steps above again.
+
+## Explore Other Add-ons
+* [**Trust**](https://github.com/cyritegamestudios/trust)
+
