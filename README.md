@@ -1,7 +1,7 @@
 # cylibs-ui
 FFXI Windower 4 framework to create interactive UI for your addon. Supported UI components includes lists, grids, tabs, buttons, text, images, tooltips and more.
 
-![menu_1](https://github.com/cyritegamestudios/cylibs-ui/assets/123847593/c86e2066-decb-4bf5-8a86-07fdd6507345)
+![menu_2](https://github.com/cyritegamestudios/trust/assets/123847593/0b50086f-5d0c-458f-9420-1065f6364eca)
 
 --------------------------------------------------------------------------------
 ## Learn More
