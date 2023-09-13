@@ -11,6 +11,7 @@ ImageCollectionViewCell = require('cylibs/ui/collection_view/cells/image_collect
 ImageItem = require('cylibs/ui/collection_view/items/image_item')
 ImageView = require('cylibs/ui/image_view')
 IndexPath = require('cylibs/ui/collection_view/index_path')
+IndexedItem = require('cylibs/ui/collection_view/indexed_item')
 ListView = require('cylibs/ui/list_view/list_view')
 ListViewItemStyle = require('cylibs/ui/style/list_view_item_style')
 Mouse = require('cylibs/ui/input/mouse')
